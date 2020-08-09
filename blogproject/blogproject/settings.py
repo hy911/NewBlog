@@ -25,7 +25,7 @@ SECRET_KEY = '@15hxc^rai#wjrpagnsb2v4j^^qp2vq*g^#n%u5r@vjfes%w-x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ["127.0.0.1", "localhost", "34.96.248.62"]
+ALLOWED_HOSTS = ["127.0.0.1", "localhost", ".madui.ga"]
 
 # Application definition
 # CACHES = {

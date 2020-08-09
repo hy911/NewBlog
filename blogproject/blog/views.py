@@ -11,10 +11,10 @@ from .models import Post, Category, Tag
 
 
 def index(request):
-    context = cache.get('index_page_data')
-    if not context:
-        post_list = Post.objects.all().order_by('-created_time')
-        cache.set('index_page_data', context, 3600)
+    # context = cache.get('index_page_data')
+    # if not context:
+    post_list = Post.objects.all().order_by('-created_time')
+    # cache.set('index_page_data', context, 3600)
     context = {"post_list": post_list}
     return render(request, 'blog/index.html', context=context)
 
